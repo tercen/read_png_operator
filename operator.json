@@ -10,5 +10,29 @@
   "urls": [
     "https://github.com/tercen/read_png_operator"
   ],
-  "properties": []
+  "properties": [],
+  "operatorSpec": {
+    "kind": "OperatorSpec",
+    "ontologyUri": "https://tercen.com/_ontology/tercen",
+    "ontologyVersion": "1.0.0",
+    "inputSpecs": [
+      {
+        "kind": "CrosstabSpec",
+        "metaFactors": [
+          {
+            "kind": "MetaFactor",
+            "name": "documentId",
+            "type": "",
+            "description": "Document ID of the PNG file to read",
+            "ontologyMapping": "document",
+            "crosstabMapping": "column",
+            "cardinality": "1..n",
+            "factors": []
+          }
+        ],
+        "axis": []
+      }
+    ],
+    "outputSpecsV2": []
+  }
 }
